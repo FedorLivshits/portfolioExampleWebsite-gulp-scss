@@ -236,3 +236,74 @@
     line-height: 30px;
   }
 }
+
+.blog {
+  &__inner {
+    padding-top: 50px;
+    margin-bottom: 53px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 55px;
+  }
+
+  &__item {
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 858px;
+      height: 1px;
+      background: #E0E0E0;
+    }
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    padding-bottom: 16px;
+  }
+
+  &__info {
+    padding-bottom: 6px;
+  }
+
+  &__date {
+    padding-right: 26px;
+    font-size: 20px;
+    line-height: 29px;
+    margin-right: 26px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 21px;
+      width: 1px;
+      background: black;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__theme {
+    font-size: 20px;
+    line-height: 29px;
+    color: $grey;
+  }
+
+  &__text {
+    max-width: 680px;
+  }
+}
