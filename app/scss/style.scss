@@ -1,0 +1,35 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.header {
+  &__container {
+    max-width: 1062px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__inner {
+    padding: 27px 0;
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__menu-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin-left: 33px;
+  }
+
+  &__menu-link {
+    color: black;
+  }
+}
+
