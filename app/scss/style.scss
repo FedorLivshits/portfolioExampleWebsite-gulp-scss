@@ -75,6 +75,11 @@
     align-items: start;
   }
 
+  &__info {
+    padding-top: 18px;
+    margin-right: 40px;
+  }
+
   &__title {
     font-size: 44px;
     line-height: 60px;
@@ -387,12 +392,13 @@
   }
 }
 
-@media (max-width: 767px){
-  .lock{
+@media (max-width: 767px) {
+
+  .lock {
     overflow: hidden;
   }
-  .header{
-    &__burger{
+  .header {
+    &__burger {
       z-index: 50;
       cursor: pointer;
       margin: 0 0 0 auto;
@@ -400,8 +406,9 @@
       width: 30px;
       height: 20px;
       position: relative;
+
       &:before,
-      &:after{
+      &:after {
         content: '';
         position: absolute;
         background-color: black;
@@ -410,25 +417,31 @@
         left: 0;
         transition: all 0.3s ease 0s;
       }
-      &:before{
+
+      &:before {
         top: 0;
       }
-      &:after{
+
+      &:after {
         bottom: 0;
       }
-      &--active:before{
+
+      &--active:before {
         transform: rotate(45deg);
         top: 9px;
       }
-      &--active:after{
+
+      &--active:after {
         transform: rotate(-45deg);
         bottom: 9px;
       }
-      &--active span{
+
+      &--active span {
         transform: scale(0);
       }
     }
-    &__burger span{
+
+    &__burger span {
       position: absolute;
       background-color: black;
       width: 100%;
@@ -448,7 +461,7 @@
       text-align: center;
       width: 100%;
       height: 100%;
-      &--active{
+      &--active {
         transform: translate(0px, 0%);
         padding-top: 100px !important;
       }
@@ -459,6 +472,7 @@
       font-size: 30px;
       line-height: 50px;
       margin-bottom: 20px;
+      margin-left: 0;
     }
 
     &__menu-link {
@@ -467,6 +481,33 @@
       &:hover {
         color: $red
       }
+    }
+  }
+
+  .top {
+    &__inner {
+      padding-top: 33px;
+      margin-bottom: 70px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__info{
+      padding-top: 33px;
+      text-align: center;
+      margin-right: 0;
+    }
+    &__image{
+      width: 170px;
+      height: 170px;
+    }
+    &__title{
+      padding-bottom: 0;
+      font-size: 32px;
+      line-height: 40px;
+    }
+    &__text{
+      padding: 21px 15px 27px;
     }
   }
 }
