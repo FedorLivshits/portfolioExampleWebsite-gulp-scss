@@ -604,4 +604,34 @@
       padding-top: 17px;
     }
   }
+  .work {
+    &__title {
+      font-size: 30px;
+      line-height: 60px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__content-title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__content-info {
+      padding-bottom: 0;
+    }
+
+    &__date {
+      font-size: 16px;
+      line-height: 60px;
+    }
+
+    &__theme {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
 }
