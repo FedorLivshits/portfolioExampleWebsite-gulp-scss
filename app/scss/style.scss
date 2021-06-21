@@ -398,6 +398,10 @@
     overflow: hidden;
   }
   .header {
+    &__menu-list {
+      z-index: 10;
+    }
+
     &__burger {
       z-index: 50;
       cursor: pointer;
@@ -542,10 +546,11 @@
     }
   }
   .works {
-    &__items{
+    &__items {
       display: flex;
       overflow: auto;
     }
+
     &__item {
       flex: 0 0 90%;
       margin-right: 15px;
@@ -563,20 +568,40 @@
     }
 
     &__date {
-      font-weight: 900;
       font-size: 16px;
       line-height: 60px;
-      color: white;
-      background: #142850;
-      padding: 2px 6px 2px 10px;
-      border-radius: 16px;
-      margin-right: 22px;
     }
 
     &__theme {
-      color: $grey;
       font-size: 16px;
       line-height: 23px;
+    }
+  }
+  .blog {
+    &__title {
+      font-size: 30px;
+      line-height: 60px;
+      margin-bottom: 18px;
+    }
+
+    &__item-title {
+      font-size: 26px;
+      line-height: 38px;
+      padding-bottom: 0;
+    }
+
+    &__date {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &__theme {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &__text {
+      padding-top: 17px;
     }
   }
 }
